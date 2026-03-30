@@ -14,6 +14,9 @@ const {
   includeSidebar = true,
   sideBarActiveItemID,
   ogType,
+  profileImage,
+  profileName,
+  profileLinkedin,
 } = Astro.props;
 ---
 
@@ -35,7 +38,7 @@ const {
         </div>
         <Footer />
       </div>
-      {includeSidebar && <SideBar sideBarActiveItemID={sideBarActiveItemID} />}
+      {includeSidebar && <SideBar sideBarActiveItemID={sideBarActiveItemID} profileImage={profileImage} profileName={profileName} profileLinkedin={profileLinkedin} />}
     </div>
   </body>
 </html>

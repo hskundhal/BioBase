@@ -1,0 +1,168 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout 
+  title="Harpreet Singh - Resume" 
+  sideBarActiveItemID="cv" 
+  profileImage="/harpreet.jpg" 
+  profileName="Harpreet Singh"
+  profileLinkedin="https://www.linkedin.com/in/harpreetsinghk/" 
+>
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Senior Data Engineer with 18+ years of experience designing, developing and implementing ETL and data migration projects across multiple RDBMS. 10+ years of hands-on experience in Big Data analytics solutions. Strong expertise in tuning Big Data solutions using Kafka, Hive, Sqoop, Impala, Nifi, Spark, Oozie, Ansible and Unix Shell scripting. Proficient in SQL, Golang, Python, Scala, and UNIX shell scripting. AWS Certified Solutions Architect Associate and Teradata Certified Master.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Senior Software Engineer"
+      subtitle="From Oct 2023 to Present at Tripstack, Toronto"
+    >
+      Develop and support the Virtual Interline product using Golang, SQL, Python, Kafka (Redpanda), and Java. Design performance improvements using graph technology (Memgraph). Implement alerts and visualizations using Grafana and Prometheus. Manage offshore resources, perform sprint planning, conduct standups and code reviews. Migrated all applications from Kafka to Redpanda.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Data Engineer II"
+      subtitle="From May 2022 to Oct 2023 at Amazon-AWS, Toronto"
+    >
+      Developed ETL solutions using Spark, Python, Redshift, Jupyterhub, Airflow and EMR. Optimized EMR data processing, reducing query run times and EMR usage by 80%, resulting in significant cost savings. Tuned Spark jobs running for 6+ hours to complete within 1 hour. Migrated billing analytics from Redshift to Spark. Implemented data validation using FK, PK and business rules on Redshift.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Data Engineer II"
+      subtitle="From Jun 2020 to Apr 2022 at Paytm, Toronto"
+    >
+      Developed streaming ETL solutions using Flink and Kafka. Designed and implemented reporting processes for the Lending platform. Developed ETL using Spark, Scala, Python, EMR, ES, AWS, Kafka, Azkaban, Aurora and Jupyter. Added new features in Growth Marketing ML modeling project and managed data pipelines for the GM ML team.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Data Engineer"
+      subtitle="From Jun 2019 to Jun 2020 at Tripstack, Toronto"
+    >
+      Designed data pipeline for Virtual Interline product. Developed ETL code using Golang, Python, Java, Kafka and Postgres. Designed ingestion in datacenter for 2 TB per day and provided data to VI API in AWS with latency less than a second and 1700 TPS. Designed and produced POC using Neo4j for virtual interlining with multiple hubs. Tuned Kafka partitions, Postgres parameters, and Golang code for high throughput and very low latency.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Sr. Hadoop Administrator"
+      subtitle="From Jan 2019 to May 2019 at Cognizant (HBC), Toronto"
+    >
+      Administration of Cloudera clusters including user management, data management and capacity management. Tuned Kafka topics and reviewed/tuned Spark jobs on Cloudera Cluster. Benchmarked Cloudera cluster and Kafka performance. Managed EC2 instances in AWS.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Spark Developer"
+      subtitle="From Jul 2018 to Sep 2018 at Accenture (Metrolinx), Toronto"
+    >
+      Designed and implemented data pipelines using Spark, Scala, Python and Unix shell scripting. Processed data streams for rail corridor dashboards. Tuned Spark jobs on Cloudera environment. Created Tableau dashboards for business metrics.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Cloudera Hadoop Admin"
+      subtitle="From Jan 2018 to Jun 2018 at Infernotions, Toronto"
+    >
+      Developed Ansible scripts to deploy Cloudera clusters on Proxmox containers. Integrated Livy and Zeppelin with Hadoop cluster. Designed hot and cold Hadoop storage for Spark. Defined data security using Sentry roles. Developed and automated DR for Cassandra, Hive and HDFS.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Big Data Architect / Senior Manager"
+      subtitle="From Jul 2017 to Dec 2017 at Bank of America, India"
+    >
+      Led India HaaS architecture team supporting platform management, strategic services and application governance. Reviewed Spark, Kafka and Hive application code for production. Contributed in research for elastic compute implementation on 20,000 cores compute grid for Spark. Resolved L2-L3 incidents on Hadoop platform.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Software Designer | Hadoop Lead"
+      subtitle="From Jan 2015 to Jul 2017 at Royal Bank of Scotland, India"
+    >
+      Designed data lake structure and security/access patterns. Developed Hadoop streaming application for capacity management, compression and data archival. Designed and implemented Hadoop cluster security using Apache Sentry, AD groups, ACLs and Kerberos. Partnered with business units, ML engineers and enterprise architects to build big data solutions. Managed Hadoop support team.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Assistant Consultant"
+      subtitle="From May 2012 to Dec 2014 at Tata Consultancy Services, India & UK"
+    >
+      Led team of 6 developers. Designed components, created HLD/LLD. Converted SAS models to Teradata SQLs with performance tuning. Installed and administered Hadoop clusters. Led design, development, testing and implementation of ETL processes using Informatica. Received On the Spot award for project contribution.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Technical Consultant"
+      subtitle="From Mar 2007 to Apr 2012 at Teradata Corporation, India & USA"
+    >
+      Performance tuning of SQL queries. Developed ETL scripts using TPT, UNIX shell scripting, Informatica and Teradata tools. Provided Teradata administration support. Designed, developed and implemented ETL scripts for Teradata DCM customers. Promoted to Technical Consultant from Assistant Technical Consultant.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Software Engineer"
+      subtitle="From Aug 2005 to Feb 2007 at Accenture Services, India"
+    >
+      Supported Barclays Wire Transfer Application. Identified and fixed issues using C++ and UNIX. Enhanced GLASS application. Resolved issues using change management process.
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="B.Tech in Electronics and Communication"
+      subtitle="2001 to 2005 at B.B.S.B. Engineering College (First Division with Distinction)"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Publications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>Anesthesia Monitoring using Neural Networks and Fuzzy Logic (2004 International Conf on Automation, Bhopal)</li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>Teradata Certified Design Architect (2010)</li>
+    <li>Teradata Certified Advanced SQL Developer (2009)</li>
+    <li>Teradata Certified Administrator (2008)</li>
+    <li>Teradata Certified Application Developer (2008)</li>
+    <li>Neo4j Certified Professional (2017)</li>
+    <li>IBM Big Data Fundamentals (2015)</li>
+    <li>MicroStrategy Certified Project Designer (2007)</li>
+    <li>Magical Marvels of MongoDB (2018)</li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <div class="mb-10">
+    <div class="mb-3">
+      <span class="font-bold">Big Data:</span> Kafka, Hive, Spark, Sqoop, HDFS, Impala, Oozie, NIFI, Zookeeper, YARN, Athena
+    </div>
+    <div class="mb-3">
+      <span class="font-bold">Languages:</span> UNIX Shell, Scala, Java, Python, Golang, C++, SQL, YAML
+    </div>
+    <div class="mb-3">
+      <span class="font-bold">Databases:</span> Teradata, HBase, PostgreSQL, Cassandra, MariaDB, Oracle, SQL Server, Aurora, Redis
+    </div>
+    <div class="mb-3">
+      <span class="font-bold">CI/CD:</span> Kubernetes, Docker, GitLab, Terraform
+    </div>
+    <div class="mb-3">
+      <span class="font-bold">Other:</span> AWS, Ansible, Kibana, Druid, Trifacta, Cloudera Manager, Ambari, Sentry, Elasticsearch, Superset
+    </div>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Awards</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>Award for contribution to Security Design for Hadoop clusters from RBS</li>
+    <li>"On the Spot" award from TCS for contribution to project delivery</li>
+    <li>Appreciation from Senior Scientist (Grade F) at C.S.I.O. for R&D project contribution during industrial internship</li>
+    <li>Winner of First Prize in National Level Quiz 2K5 held at BBSBEC</li>
+    <li>Published paper in National Conference on 'Modern Trends in the Automation', Bhopal</li>
+  </ul>
+
+</BaseLayout>

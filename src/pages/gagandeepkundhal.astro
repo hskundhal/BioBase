@@ -1,30 +1,22 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
-<BaseLayout title="Resume" sideBarActiveItemID="cv">
+<BaseLayout 
+  title="Gagandeep Kundhal - Resume" 
+  sideBarActiveItemID="cv" 
+  profileImage="/profile.jpg" 
+  profileName="Gagandeep Kundhal"
+  profileLinkedin="https://www.linkedin.com/in/gagandeepkundhal/"
+>
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Profile</div>
   </div>
 
   <div class="mb-10 text-justify">
     Results-oriented Staff Engineer with extensive experience in front-end UI design and full-stack development. Deep understanding of Design Patterns including Singleton, Factory, and Observer. Expert in building scalable Single Page Applications (SPA) using Angular, React, and Node.js. Proven track record in Agile environments, integrating complex Social Media APIs, and managing cloud deployments on AWS.
-  </div>
-
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Education</div>
-  </div>
-
-  <div class="time-line-container grid gap-4 mb-10">
-    <TimeLineElement
-      title="Masters of Computer Applications"
-      subtitle="2005 to 2008 at Anna University, Chennai, India"
-    />
-    <TimeLineElement
-      title="Bachelors of Science"
-      subtitle="at International College for Girls, Jaipur, Rajasthan, India"
-    />
   </div>
 
   <div class="mb-5">
@@ -68,6 +60,49 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     >
       Contributed to RIA applications using Backbone/Marionette. Focused on unit testing (Mocha) and CI/CD (Grunt).
     </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Key Projects</div>
+  </div>
+
+  <HorizontalCard
+    title="Personal Investment Module Redesign"
+    img="/project_placeholder.webp"
+    desc="Worked on redesigning the Personal Investment module for Fidelity International. Implemented solutions using Angular, Node.js, and MongoDB, hosted on AWS Cloud."
+    url="#"
+    badge="Fidelity"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Lanyon Travel Portal"
+    img="/project_placeholder.webp"
+    desc="Developed and maintained the Lanyon travel portal. Handled bug fixing and feature enhancements using JavaScript and jQuery."
+    url="#"
+    badge="Cybage"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Tech Data Retail Website"
+    img="/project_placeholder.webp"
+    desc="Maintained and enhanced the Tech Data retail website. Ensured cross-browser compatibility and optimized performance using HTML, CSS, and jQuery."
+    url="#"
+    badge="HCL"
+  />
+
+  <div class="mb-5 mt-10">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Masters of Computer Applications"
+      subtitle="2005 to 2008 at Anna University, Chennai, India"
+    />
+    <TimeLineElement
+      title="Bachelors of Science"
+      subtitle="at International College for Girls, Jaipur, Rajasthan, India"
+    />
   </div>
 
   <div class="mb-5">
